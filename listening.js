@@ -11,4 +11,8 @@ server.on('request', function(request, response) {
    console.log("New request coming in...");
 });
 
+server.on('close', function() {
+  console.log("Closing down the server...");
+});
+
 server.listen(8080);
